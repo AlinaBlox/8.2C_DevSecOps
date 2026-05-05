@@ -18,7 +18,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                echo 'Tool: Mocha'
+                echo 'Tool: Jasmine'
                 bat 'npm test || exit /b 0'
             }
             post {
