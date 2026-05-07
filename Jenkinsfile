@@ -26,6 +26,7 @@ pipeline {
                     emailext body: 'The Run Tests stage has completed. See attached build log.',
                         subject: 'Jenkins Test Stage Result',
                         to: 'alinabloxsom@gmail.com',
+                        from: 'alinabloxsom@gmail.com', 
                         attachLog: true
                 }
             }
@@ -48,6 +49,7 @@ pipeline {
                     emailext body: 'The Security Scan stage has completed. See attached build log.',
                         subject: 'Jenkins Security Scan Result',
                         to: 'alinabloxsom@gmail.com',
+                        from: 'alinabloxsom@gmail.com',
                         attachLog: true
                 }
             }
